@@ -62,6 +62,13 @@ const games: Product[] = [
     link: "/coin-collector",
     buttonText: "Play Now",
   },
+  {
+    title: "Sprint'n Survive!",
+    imageUrl: "/images/sprintandsurvive.png",
+    description: "Retro endless runner — sprint 1000 meters to the finish line, dodge obstacles and grab points along the way. Will you survive?",
+    link: "/sprint-and-survive",
+    buttonText: "Play Now",
+  },
 ]
 
 // Unified card for both games and apps — same size, same style.

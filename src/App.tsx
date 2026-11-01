@@ -35,7 +35,7 @@ function HomePage() {
 }
 
 // Trasy, na których renderujemy SAMĄ grę na pełnym ekranie (bez nagłówka/stopki).
-const GAME_ROUTES = ['/schools-out', '/coin-collector']
+const GAME_ROUTES = ['/schools-out', '/coin-collector', '/sprint-and-survive']
 
 function App() {
   return (
@@ -59,6 +59,7 @@ function Shell() {
         <Route path="/products" element={<Products />} />
         <Route path="/schools-out" element={<PlayGame slug="schools-out" />} />
         <Route path="/coin-collector" element={<PlayGame slug="coin-collector" />} />
+        <Route path="/sprint-and-survive" element={<PlayGame slug="sprint-and-survive" />} />
         <Route path="/games" element={<Navigate to="/products" replace />} />
         <Route path="/apps" element={<Navigate to="/products" replace />} />
         <Route path="/products/exsize" element={<Exsize />} />

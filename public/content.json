@@ -74,6 +74,13 @@
       },
       {
         "icon": "Trophy",
+        "imageUrl": "/images/sprintandsurvive.png",
+        "title": "Sprint'n Survive!",
+        "buttonText": "Play Now",
+        "buttonLink": "/sprint-and-survive"
+      },
+      {
+        "icon": "Trophy",
         "imageUrl": "/images/exsize-preview.png",
         "title": "ExSize",
         "buttonText": "Learn More",
@@ -100,6 +107,12 @@
         "title": "Coin Collector",
         "src": "https://crystalplatforms.github.io/coin-collector/",
         "imageUrl": "/images/coincollector.png"
+      },
+      {
+        "slug": "sprint-and-survive",
+        "title": "Sprint'n Survive!",
+        "src": "https://crystalplatforms.github.io/sprint-and-survive/",
+        "imageUrl": "/images/sprintandsurvive.png"
       }
     ]
   },
