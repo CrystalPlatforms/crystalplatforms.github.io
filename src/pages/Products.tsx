@@ -1,7 +1,7 @@
 import { cn } from '../utils/helpers'
 import { glowAnimation } from '../utils/game-effects'
 import { Link } from 'react-router'
-import { ExternalLink, Github, AppWindow } from 'lucide-react'
+import { IconAppWindow, IconBrandGithub, IconExternalLink, IconWorld } from '@tabler/icons-react'
 
 type Product = {
   title: string
@@ -12,6 +12,9 @@ type Product = {
   link: string
   // External link — when present, renders the "Open" button (GitHub/exsize/wspolniak etc.).
   openLink?: string
+  // Link do strony własnej produktu (pages.dev) — gdy jest, karta dostaje trzy
+  // przyciski: Website / GitHub / More (a "Open" zmienia etykietę na "GitHub").
+  websiteLink?: string
   // Label of the single main button shown when there is no openLink (e.g. "Play Now", "Learn More").
   buttonText?: string
 }
@@ -44,6 +47,15 @@ const apps: Product[] = [
     description: "Open-source terminal workspace manager for Linux, macOS and Windows — persistent project workspaces, tabs & split panels, SSH, agent status, and desktop notifications when AI CLI tasks finish. v1.0 is out now!",
     link: "/products/umux",
     openLink: "https://github.com/CrystalPlatforms/umux",
+    websiteLink: "https://umux.pages.dev",
+  },
+  {
+    title: "Klepai",
+    imageUrl: "/images/klepai-preview.png",
+    description: "Private, self-hosted LLM manager — a desktop chat app for Linux, macOS and Windows that talks to your own model servers (Ollama first-class). Agent mode with Claude Code & Codex CLI, everything local, no telemetry. Alpha out now!",
+    link: "/products/klepai",
+    openLink: "https://github.com/CrystalPlatforms/klepai",
+    websiteLink: "https://klepai.pages.dev",
   },
 ]
 
@@ -85,7 +97,7 @@ function ProductCard({ product }: { product: Product }) {
       "transition-all duration-300 hover:scale-105",
       "hover:shadow-xl hover:shadow-indigo-500/30"
     )}>
-      {/* Image / placeholder — always the same aspect ratio so every card is identical in size */}
+      {/* IconPhoto / placeholder — always the same aspect ratio so every card is identical in size */}
       <div className="relative aspect-video bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
         {product.imageUrl ? (
           <img
@@ -94,7 +106,7 @@ function ProductCard({ product }: { product: Product }) {
             className="w-full h-full object-cover"
           />
         ) : (
-          <AppWindow className="h-16 w-16 text-indigo-400/40" />
+          <IconAppWindow aria-hidden="true" className="h-16 w-16 text-indigo-400/40" />
         )}
       </div>
 
@@ -118,7 +130,27 @@ function ProductCard({ product }: { product: Product }) {
         {/* Buttons — pinned to the bottom so every card in a row lines up */}
         <div className="mt-auto">
           {product.openLink ? (
-            <div className="flex gap-3">
+            <div className={cn("flex", product.websiteLink ? "gap-2" : "gap-3")}>
+              {product.websiteLink && (
+                <a
+                  href={product.websiteLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn(
+                    "flex-1 flex items-center justify-center gap-2",
+                    "py-2 px-4 rounded-lg",
+                    "bg-gradient-to-r from-indigo-600 to-purple-600",
+                    "text-white font-medium",
+                    "hover:from-indigo-500 hover:to-purple-500",
+                    "transition-all duration-300",
+                    "shadow-lg shadow-indigo-500/20",
+                    "hover:shadow-xl hover:shadow-indigo-500/30"
+                  )}
+                >
+                  <IconWorld aria-hidden="true" className="h-4 w-4" />
+                  Website
+                </a>
+              )}
               <a
                 href={product.openLink}
                 target="_blank"
@@ -126,16 +158,16 @@ function ProductCard({ product }: { product: Product }) {
                 className={cn(
                   "flex-1 flex items-center justify-center gap-2",
                   "py-2 px-4 rounded-lg",
-                  "bg-gradient-to-r from-indigo-600 to-purple-600",
-                  "text-white font-medium",
-                  "hover:from-indigo-500 hover:to-purple-500",
                   "transition-all duration-300",
-                  "shadow-lg shadow-indigo-500/20",
-                  "hover:shadow-xl hover:shadow-indigo-500/30"
+                  product.websiteLink ? (
+                    "border border-indigo-500/50 bg-indigo-900/30 text-indigo-200 font-medium hover:bg-indigo-800/50"
+                  ) : (
+                    "bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium hover:from-indigo-500 hover:to-purple-500 shadow-lg shadow-indigo-500/20 hover:shadow-xl hover:shadow-indigo-500/30"
+                  )
                 )}
               >
-                {isGithub ? <Github className="h-4 w-4" /> : <ExternalLink className="h-4 w-4" />}
-                Open
+                {isGithub ? <IconBrandGithub aria-hidden="true" className="h-4 w-4" /> : <IconExternalLink aria-hidden="true" className="h-4 w-4" />}
+                {product.websiteLink ? "GitHub" : "Open"}
               </a>
               <Link
                 to={product.link}

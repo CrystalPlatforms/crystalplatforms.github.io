@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Loader2 } from 'lucide-react'
+import { IconLoader2 } from '@tabler/icons-react'
 import type { Game } from '../../types/content'
 
 /**
@@ -17,7 +17,7 @@ export function GamePlayer({ game }: { game: Game }) {
     <div className="fixed inset-0 bg-gray-950">
       {!loaded && (
         <div className="absolute inset-0 flex items-center justify-center">
-          <Loader2 className="h-12 w-12 text-indigo-400 animate-spin" />
+          <IconLoader2 aria-hidden="true" className="h-12 w-12 text-indigo-400 animate-spin" />
         </div>
       )}
       <iframe

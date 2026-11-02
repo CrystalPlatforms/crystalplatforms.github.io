@@ -1,16 +1,16 @@
 import { useContentData } from '../../hooks/useContentData'
 import { ContentData } from '../../types/content'
 import { useState, type ComponentType } from 'react'
-import { Menu, X, Home, Package, Mail, Info, Github } from 'lucide-react'
+import { IconBrandGithub, IconHome, IconInfoCircle, IconMail, IconMenu, IconPackage, IconX } from '@tabler/icons-react'
 import { cn } from '../../utils/helpers'
 import { pixelBorder } from '../../utils/game-effects'
 import { Link, useLocation } from 'react-router'
 
 const navIconMap: Record<string, ComponentType<{ className?: string }>> = {
-  'Home': Home,
-  'Products': Package,
-  'About': Info,
-  'Contact': Mail,
+  'Home': IconHome,
+  'Products': IconPackage,
+  'About': IconInfoCircle,
+  'Contact': IconMail,
 }
 
 export function Header() {
@@ -46,9 +46,9 @@ export function Header() {
             >
               <span className="sr-only">{isMenuOpen ? 'Close menu' : 'Open menu'}</span>
               {isMenuOpen ? (
-                <X className="h-6 w-6" aria-hidden="true" />
+                <IconX className="h-6 w-6" aria-hidden="true" />
               ) : (
-                <Menu className="h-6 w-6" aria-hidden="true" />
+                <IconMenu className="h-6 w-6" aria-hidden="true" />
               )}
             </button>
 
@@ -89,7 +89,7 @@ export function Header() {
                         )}
                         onClick={() => setIsMenuOpen(false)}
                       >
-                        {NavIcon && <NavIcon className="h-4 w-4" />}
+                        {NavIcon && <NavIcon aria-hidden="true" className="h-4 w-4" />}
                         {item.text}
                       </Link>
                     ) : (
@@ -110,7 +110,7 @@ export function Header() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {NavIcon && <NavIcon className="h-4 w-4" />}
+                        {NavIcon && <NavIcon aria-hidden="true" className="h-4 w-4" />}
                         {item.text}
                       </a>
                     )
@@ -141,7 +141,7 @@ export function Header() {
                   )}
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  <Github className="h-4 w-4" />
+                  <IconBrandGithub aria-hidden="true" className="h-4 w-4" />
                   GitHub
                 </a>
               </div>
@@ -172,7 +172,7 @@ export function Header() {
                       "hover:shadow-[0_0_10px_0_rgba(99,102,241,0.3)]"
                     )}
                   >
-                    {NavIcon && <NavIcon className="h-4 w-4" />}
+                    {NavIcon && <NavIcon aria-hidden="true" className="h-4 w-4" />}
                     {item.text}
                   </Link>
                 ) : (
@@ -191,7 +191,7 @@ export function Header() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {NavIcon && <NavIcon className="h-4 w-4" />}
+                    {NavIcon && <NavIcon aria-hidden="true" className="h-4 w-4" />}
                     {item.text}
                   </a>
                 )
@@ -216,7 +216,7 @@ export function Header() {
               )}
             >
               <span className="sr-only">GitHub</span>
-              <Github className="h-5 w-5" />
+              <IconBrandGithub aria-hidden="true" className="h-5 w-5" />
             </a>
           </nav>
         </div>

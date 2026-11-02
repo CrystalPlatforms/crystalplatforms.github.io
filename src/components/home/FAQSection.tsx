@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useContentData } from '../../hooks/useContentData'
 import { ContentData } from '../../types/content'
-import { ChevronDown, ChevronUp } from 'lucide-react'
+import { IconChevronDown, IconChevronUp } from '@tabler/icons-react'
 import { cn } from '../../utils/helpers'
 import { 
   glowAnimation, 
@@ -86,9 +86,9 @@ export function FAQSection() {
                     {category.name}
                   </span>
                   {openCategories.includes(categoryIndex) ? (
-                    <ChevronUp className="h-5 w-5 text-indigo-400" />
+                    <IconChevronUp aria-hidden="true" className="h-5 w-5 text-indigo-400" />
                   ) : (
-                    <ChevronDown className="h-5 w-5 text-indigo-400" />
+                    <IconChevronDown aria-hidden="true" className="h-5 w-5 text-indigo-400" />
                   )}
                 </button>
                 
@@ -124,12 +124,12 @@ export function FAQSection() {
                               {item.question}
                             </span>
                             {isItemOpen(categoryIndex, itemIndex) ? (
-                              <ChevronUp className={cn(
+                              <IconChevronUp aria-hidden="true" className={cn(
                                 "h-4 w-4 text-indigo-400",
                                 glowAnimation
                               )} />
                             ) : (
-                              <ChevronDown className="h-4 w-4 text-indigo-400" />
+                              <IconChevronDown aria-hidden="true" className="h-4 w-4 text-indigo-400" />
                             )}
                           </button>
                         </dt>
@@ -187,12 +187,12 @@ export function FAQSection() {
                       {item.question}
                     </span>
                     {isItemOpen(-1, index) ? (
-                      <ChevronUp className={cn(
+                      <IconChevronUp aria-hidden="true" className={cn(
                         "h-5 w-5 text-indigo-400",
                         glowAnimation
                       )} />
                     ) : (
-                      <ChevronDown className="h-5 w-5 text-indigo-400" />
+                      <IconChevronDown aria-hidden="true" className="h-5 w-5 text-indigo-400" />
                     )}
                   </button>
                 </dt>

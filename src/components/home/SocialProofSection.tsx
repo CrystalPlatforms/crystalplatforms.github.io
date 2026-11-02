@@ -1,6 +1,6 @@
 import { useContentData } from '../../hooks/useContentData'
 import { ContentData } from '../../types/content'
-import { Star } from 'lucide-react'
+import { IconStar } from '@tabler/icons-react'
 import { getIconComponent } from '../../utils/helpers'
 import { cn } from '../../utils/helpers'
 import { 
@@ -49,7 +49,7 @@ export function SocialProofSection() {
                   index === 1 ? floatAnimation : ''
                 )}
               >
-                <IconComponent className={cn(
+                <IconComponent aria-hidden="true" className={cn(
                   "h-12 w-auto mb-4 text-indigo-400",
                   glowAnimation
                 )} />
@@ -58,7 +58,7 @@ export function SocialProofSection() {
                 </p>
                 <div className="flex items-center space-x-1">
                   {[...Array(5)].map((_, i) => (
-                    <Star
+                    <IconStar aria-hidden="true"
                       key={i}
                       className={cn(
                         "h-5 w-5",
@@ -71,11 +71,11 @@ export function SocialProofSection() {
                   ))}
                   {item.rating % 1 !== 0 && (
                     <div className="relative">
-                      <Star
+                      <IconStar aria-hidden="true"
                         className="h-5 w-5 text-gray-600"
                         fill="currentColor"
                       />
-                      <Star
+                      <IconStar aria-hidden="true"
                         className="absolute top-0 left-0 h-5 w-5 text-yellow-400 animate-[glow_1s_ease-in-out_infinite]"
                         fill="currentColor"
                         style={{ clipPath: `inset(0 ${100 - (item.rating % 1) * 100}% 0 0)` }}

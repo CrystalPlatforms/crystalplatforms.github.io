@@ -1,25 +1,6 @@
 import { cn } from '../utils/helpers'
 import { glowAnimation } from '../utils/game-effects'
-import { 
-  Globe, 
-  Folder, 
-  KeyRound, 
-  Bookmark, 
-  Download, 
-  FileText, 
-  Layout, 
-  Puzzle, 
-  Database,
-  Printer,
-  QrCode,
-  Share2,
-  BookOpen,
-  Link2,
-  Code,
-  Zap,
-  Settings,
-  Github
-} from 'lucide-react'
+import { IconBolt, IconBook, IconBookmark, IconBrandGithub, IconCode, IconDatabase, IconDownload, IconFileText, IconFolder, IconKey, IconLayoutDashboard, IconLink, IconPrinter, IconPuzzle, IconQrcode, IconSettings, IconShare, IconWorld } from '@tabler/icons-react'
 import { useState, useEffect } from 'react'
 
 // GitHub repository owner and name
@@ -82,7 +63,7 @@ export function Egrator() {
                 "bg-gradient-to-br from-indigo-600 to-purple-600",
                 "shadow-lg shadow-indigo-500/30"
               )}>
-                <Globe className="h-12 w-12 text-white" />
+                <IconWorld aria-hidden="true" className="h-12 w-12 text-white" />
               </div>
             </div>
             <h1 className={cn(
@@ -101,7 +82,7 @@ export function Egrator() {
             </p>
           </div>
 
-          {/* Download Section */}
+          {/* IconDownload Section */}
           <div className={cn(
             "bg-gradient-to-b from-indigo-900/50 to-purple-900/50",
             "rounded-xl p-8 mb-12",
@@ -110,14 +91,14 @@ export function Egrator() {
             "text-center"
           )}>
             <div className="flex justify-center mb-4">
-              <Download className="h-12 w-12 text-indigo-400" />
+              <IconDownload aria-hidden="true" className="h-12 w-12 text-indigo-400" />
             </div>
             <h2 className={cn(
               "text-3xl font-bold mb-4",
               "bg-gradient-to-r from-indigo-400 to-purple-400",
               "bg-clip-text text-transparent"
             )}>
-              Download EgraTor
+              IconDownload EgraTor
             </h2>
             
             {loading ? (
@@ -150,13 +131,13 @@ export function Egrator() {
                         )}
                       >
                         <div className="flex items-center space-x-3">
-                          <Download className="h-5 w-5" />
+                          <IconDownload aria-hidden="true" className="h-5 w-5" />
                           <div className="text-left">
                             <p className="font-semibold">{asset.name}</p>
                             <p className="text-sm text-gray-500">{formatFileSize(asset.size)}</p>
                           </div>
                         </div>
-                        <Download className="h-5 w-5" />
+                        <IconDownload aria-hidden="true" className="h-5 w-5" />
                       </button>
                     ))}
                   </div>
@@ -192,7 +173,7 @@ export function Egrator() {
                     "cursor-not-allowed opacity-50"
                   )}
                 >
-                  <Github className="h-5 w-5" />
+                  <IconBrandGithub aria-hidden="true" className="h-5 w-5" />
                   <span>View Releases on GitHub</span>
                 </button>
               </div>
@@ -217,28 +198,28 @@ export function Egrator() {
               </h2>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
-                  <Folder className="h-5 w-5 text-indigo-400 mt-0.5" />
+                  <IconFolder aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                   <div>
                     <p className="text-indigo-200 font-medium">Categories</p>
-                    <p className="text-indigo-300 text-sm">Home, Work, Entertainment, Social (can add custom ones)</p>
+                    <p className="text-indigo-300 text-sm">IconHome, Work, Entertainment, Social (can add custom ones)</p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <Globe className="h-5 w-5 text-indigo-400 mt-0.5" />
+                  <IconWorld aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                   <div>
                     <p className="text-indigo-200 font-medium">Pages/Applications</p>
                     <p className="text-indigo-300 text-sm">Rounded square icons as SVG graphics</p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <Link2 className="h-5 w-5 text-indigo-400 mt-0.5" />
+                  <IconLink aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                   <div>
                     <p className="text-indigo-200 font-medium">WEB</p>
                     <p className="text-indigo-300 text-sm">Link to crystalgames.studio</p>
                   </div>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <Settings className="h-5 w-5 text-indigo-400 mt-0.5" />
+                  <IconSettings aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                   <div>
                     <p className="text-indigo-200 font-medium">Adding</p>
                     <p className="text-indigo-300 text-sm">Ability to add custom categories and pages</p>
@@ -266,35 +247,35 @@ export function Egrator() {
                   <p className="text-indigo-200 font-medium mb-2">Tools:</p>
                   <div className="grid grid-cols-2 gap-2 text-sm">
                     <div className="flex items-center space-x-2 text-indigo-300">
-                      <Zap className="h-4 w-4" />
+                      <IconBolt aria-hidden="true" className="h-4 w-4" />
                       <span>AI Assistant</span>
                     </div>
                     <div className="flex items-center space-x-2 text-indigo-300">
-                      <KeyRound className="h-4 w-4" />
+                      <IconKey aria-hidden="true" className="h-4 w-4" />
                       <span>Password Manager</span>
                     </div>
                     <div className="flex items-center space-x-2 text-indigo-300">
-                      <Bookmark className="h-4 w-4" />
+                      <IconBookmark aria-hidden="true" className="h-4 w-4" />
                       <span>Bookmarks</span>
                     </div>
                     <div className="flex items-center space-x-2 text-indigo-300">
-                      <Download className="h-4 w-4" />
+                      <IconDownload aria-hidden="true" className="h-4 w-4" />
                       <span>Downloads</span>
                     </div>
                     <div className="flex items-center space-x-2 text-indigo-300">
-                      <FileText className="h-4 w-4" />
+                      <IconFileText aria-hidden="true" className="h-4 w-4" />
                       <span>Notes</span>
                     </div>
                     <div className="flex items-center space-x-2 text-indigo-300">
-                      <Layout className="h-4 w-4" />
+                      <IconLayoutDashboard aria-hidden="true" className="h-4 w-4" />
                       <span>Split and dock</span>
                     </div>
                     <div className="flex items-center space-x-2 text-indigo-300">
-                      <Puzzle className="h-4 w-4" />
+                      <IconPuzzle aria-hidden="true" className="h-4 w-4" />
                       <span>Extensions</span>
                     </div>
                     <div className="flex items-center space-x-2 text-indigo-300">
-                      <Database className="h-4 w-4" />
+                      <IconDatabase aria-hidden="true" className="h-4 w-4" />
                       <span>Other Data</span>
                     </div>
                   </div>
@@ -303,27 +284,27 @@ export function Egrator() {
                   <p className="text-indigo-200 font-medium mb-2">Actions:</p>
                   <div className="grid grid-cols-2 gap-2 text-sm">
                     <div className="flex items-center space-x-2 text-indigo-300">
-                      <Printer className="h-4 w-4" />
+                      <IconPrinter aria-hidden="true" className="h-4 w-4" />
                       <span>Print</span>
                     </div>
                     <div className="flex items-center space-x-2 text-indigo-300">
-                      <QrCode className="h-4 w-4" />
-                      <span>Generate QR Code</span>
+                      <IconQrcode aria-hidden="true" className="h-4 w-4" />
+                      <span>Generate QR IconCode</span>
                     </div>
                     <div className="flex items-center space-x-2 text-indigo-300">
-                      <Share2 className="h-4 w-4" />
+                      <IconShare aria-hidden="true" className="h-4 w-4" />
                       <span>Send/Share</span>
                     </div>
                     <div className="flex items-center space-x-2 text-indigo-300">
-                      <BookOpen className="h-4 w-4" />
+                      <IconBook aria-hidden="true" className="h-4 w-4" />
                       <span>Reader Mode</span>
                     </div>
                     <div className="flex items-center space-x-2 text-indigo-300">
-                      <Link2 className="h-4 w-4" />
+                      <IconLink aria-hidden="true" className="h-4 w-4" />
                       <span>Copy URL</span>
                     </div>
                     <div className="flex items-center space-x-2 text-indigo-300">
-                      <Code className="h-4 w-4" />
+                      <IconCode aria-hidden="true" className="h-4 w-4" />
                       <span>Dev Mode</span>
                     </div>
                   </div>
@@ -348,28 +329,28 @@ export function Egrator() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex items-start space-x-3">
-                <Layout className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconLayoutDashboard aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">Tabs</p>
                   <p className="text-indigo-300 text-sm">Tab system with ability to add/close tabs</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Globe className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconWorld aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">Navigation</p>
                   <p className="text-indigo-300 text-sm">URL bar with automatic search recognition</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Zap className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconBolt aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
-                  <p className="text-indigo-200 font-medium">Keyboard Shortcuts</p>
+                  <p className="text-indigo-200 font-medium">IconKeyboard Shortcuts</p>
                   <p className="text-indigo-300 text-sm">Ctrl+T, Ctrl+W, Ctrl+R, Ctrl+L, F12</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Database className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconDatabase aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">Data Storage</p>
                   <p className="text-indigo-300 text-sm">Automatic saving of settings and data</p>
@@ -378,7 +359,7 @@ export function Egrator() {
             </div>
           </div>
 
-          {/* Keyboard Shortcuts */}
+          {/* IconKeyboard Shortcuts */}
           <div className={cn(
             "bg-gradient-to-b from-indigo-900/50 to-purple-900/50",
             "rounded-xl p-6 mb-12",
@@ -390,7 +371,7 @@ export function Egrator() {
               "bg-gradient-to-r from-indigo-400 to-purple-400",
               "bg-clip-text text-transparent"
             )}>
-              Keyboard Shortcuts
+              IconKeyboard Shortcuts
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <div className="flex items-center justify-between p-3 rounded-lg bg-gray-800/50">
@@ -432,22 +413,22 @@ export function Egrator() {
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="text-center p-4 rounded-lg bg-gray-800/50">
-                <Code className="h-8 w-8 text-indigo-400 mx-auto mb-2" />
+                <IconCode aria-hidden="true" className="h-8 w-8 text-indigo-400 mx-auto mb-2" />
                 <p className="text-indigo-200 font-medium">Electron</p>
                 <p className="text-indigo-300 text-sm">Desktop framework</p>
               </div>
               <div className="text-center p-4 rounded-lg bg-gray-800/50">
-                <Globe className="h-8 w-8 text-indigo-400 mx-auto mb-2" />
+                <IconWorld aria-hidden="true" className="h-8 w-8 text-indigo-400 mx-auto mb-2" />
                 <p className="text-indigo-200 font-medium">Chromium</p>
                 <p className="text-indigo-300 text-sm">Browser engine</p>
               </div>
               <div className="text-center p-4 rounded-lg bg-gray-800/50">
-                <Layout className="h-8 w-8 text-indigo-400 mx-auto mb-2" />
+                <IconLayoutDashboard aria-hidden="true" className="h-8 w-8 text-indigo-400 mx-auto mb-2" />
                 <p className="text-indigo-200 font-medium">Neumorphism</p>
                 <p className="text-indigo-300 text-sm">UI style</p>
               </div>
               <div className="text-center p-4 rounded-lg bg-gray-800/50">
-                <Database className="h-8 w-8 text-indigo-400 mx-auto mb-2" />
+                <IconDatabase aria-hidden="true" className="h-8 w-8 text-indigo-400 mx-auto mb-2" />
                 <p className="text-indigo-200 font-medium">electron-store</p>
                 <p className="text-indigo-300 text-sm">Data storage</p>
               </div>

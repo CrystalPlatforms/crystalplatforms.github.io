@@ -1,21 +1,6 @@
 import { cn } from '../utils/helpers'
 import { glowAnimation } from '../utils/game-effects'
-import {
-  Trophy,
-  ExternalLink,
-  ClipboardList,
-  CheckCircle,
-  Gift,
-  Shield,
-  Crown,
-  Users,
-  Calendar,
-  BarChart3,
-  Target,
-  Sparkles,
-  Star,
-  Zap
-} from 'lucide-react'
+import { IconBolt, IconCalendar, IconChartHistogram, IconCircleCheck, IconClipboardList, IconCrown, IconExternalLink, IconGift, IconShield, IconSparkles, IconStar, IconTarget, IconTrophy, IconUsers } from '@tabler/icons-react'
 
 export function Exsize() {
   return (
@@ -30,7 +15,7 @@ export function Exsize() {
                 "bg-gradient-to-br from-indigo-600 to-purple-600",
                 "shadow-lg shadow-indigo-500/30"
               )}>
-                <Trophy className="h-12 w-12 text-white" />
+                <IconTrophy aria-hidden="true" className="h-12 w-12 text-white" />
               </div>
             </div>
             <h1 className={cn(
@@ -82,7 +67,7 @@ export function Exsize() {
                 "hover:shadow-xl hover:shadow-indigo-500/30"
               )}
             >
-              Open ExSize <ExternalLink className="h-5 w-5" />
+              Open ExSize <IconExternalLink aria-hidden="true" className="h-5 w-5" />
             </a>
           </div>
 
@@ -105,7 +90,7 @@ export function Exsize() {
               )}>
                 <div className="flex justify-center mb-3">
                   <div className="p-3 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
-                    <ClipboardList className="h-8 w-8 text-white" />
+                    <IconClipboardList aria-hidden="true" className="h-8 w-8 text-white" />
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-indigo-200 mb-2">Parents Assign Tasks</h3>
@@ -120,7 +105,7 @@ export function Exsize() {
               )}>
                 <div className="flex justify-center mb-3">
                   <div className="p-3 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
-                    <CheckCircle className="h-8 w-8 text-white" />
+                    <IconCircleCheck aria-hidden="true" className="h-8 w-8 text-white" />
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-indigo-200 mb-2">Children Complete Tasks</h3>
@@ -135,7 +120,7 @@ export function Exsize() {
               )}>
                 <div className="flex justify-center mb-3">
                   <div className="p-3 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
-                    <Gift className="h-8 w-8 text-white" />
+                    <IconGift aria-hidden="true" className="h-8 w-8 text-white" />
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-indigo-200 mb-2">ExBucks & Rewards</h3>
@@ -160,56 +145,56 @@ export function Exsize() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex items-start space-x-3">
-                <Target className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconTarget aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">Task Lifecycle</p>
                   <p className="text-indigo-300 text-sm">Create, assign, complete, approve or reject — full task state machine with parent oversight.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Calendar className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconCalendar aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">Weekly Plans</p>
                   <p className="text-indigo-300 text-sm">Assign tasks to specific days of the week. Children see their plan organized by day.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Zap className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconBolt aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">ExBucks Economy</p>
                   <p className="text-indigo-300 text-sm">Virtual currency earned through tasks. Full transaction ledger with earned, spent, and penalty records.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Gift className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconGift aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">Reward Shop</p>
                   <p className="text-indigo-300 text-sm">Admin-managed catalog with fixed prices. Children purchase rewards instantly with ExBucks.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Trophy className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconTrophy aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">50 Levels & XP</p>
                   <p className="text-indigo-300 text-sm">Progressive level system. XP equals ExBucks earned. Unlock titles and badges as you level up.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Sparkles className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconSparkles aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">Streaks & Badges</p>
                   <p className="text-indigo-300 text-sm">Track consecutive days of 100% task completion. Earn badges at level milestones.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <BarChart3 className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconChartHistogram aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">Parent Dashboard</p>
                   <p className="text-indigo-300 text-sm">Per-child statistics, weekly overview, task completion trends, and ExBucks tracking.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Star className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconStar aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">Player Profiles</p>
                   <p className="text-indigo-300 text-sm">Game-like profile pages with level, XP, streaks, badges, and transaction history.</p>
@@ -227,7 +212,7 @@ export function Exsize() {
               "shadow-lg shadow-indigo-500/20"
             )}>
               <div className="flex items-center space-x-3 mb-4">
-                <Users className="h-6 w-6 text-indigo-400" />
+                <IconUsers aria-hidden="true" className="h-6 w-6 text-indigo-400" />
                 <h2 className={cn(
                   "text-2xl font-bold",
                   "bg-gradient-to-r from-indigo-400 to-purple-400",
@@ -238,23 +223,23 @@ export function Exsize() {
               </div>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-indigo-400 mt-0.5" />
+                  <IconCircleCheck aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                   <span className="text-indigo-200">Up to 2 parents + 1 child</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-indigo-400 mt-0.5" />
+                  <IconCircleCheck aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                   <span className="text-indigo-200">Full task lifecycle</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-indigo-400 mt-0.5" />
+                  <IconCircleCheck aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                   <span className="text-indigo-200">ExBucks economy & reward shop</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-indigo-400 mt-0.5" />
+                  <IconCircleCheck aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                   <span className="text-indigo-200">Levels, XP & streaks</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-indigo-400 mt-0.5" />
+                  <IconCircleCheck aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                   <span className="text-indigo-200">1 Freemium badge</span>
                 </li>
               </ul>
@@ -266,7 +251,7 @@ export function Exsize() {
               "shadow-lg shadow-indigo-500/20"
             )}>
               <div className="flex items-center space-x-3 mb-4">
-                <Crown className="h-6 w-6 text-yellow-400" />
+                <IconCrown aria-hidden="true" className="h-6 w-6 text-yellow-400" />
                 <h2 className={cn(
                   "text-2xl font-bold",
                   "bg-gradient-to-r from-yellow-400 to-amber-400",
@@ -277,23 +262,23 @@ export function Exsize() {
               </div>
               <ul className="space-y-3">
                 <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-yellow-400 mt-0.5" />
+                  <IconCircleCheck aria-hidden="true" className="h-5 w-5 text-yellow-400 mt-0.5" />
                   <span className="text-indigo-200">Unlimited family members</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-yellow-400 mt-0.5" />
+                  <IconCircleCheck aria-hidden="true" className="h-5 w-5 text-yellow-400 mt-0.5" />
                   <span className="text-indigo-200">Photo proof of task completion</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-yellow-400 mt-0.5" />
+                  <IconCircleCheck aria-hidden="true" className="h-5 w-5 text-yellow-400 mt-0.5" />
                   <span className="text-indigo-200">Premium badges at level milestones</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-yellow-400 mt-0.5" />
+                  <IconCircleCheck aria-hidden="true" className="h-5 w-5 text-yellow-400 mt-0.5" />
                   <span className="text-indigo-200">Sibling leaderboard</span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <CheckCircle className="h-5 w-5 text-yellow-400 mt-0.5" />
+                  <IconCircleCheck aria-hidden="true" className="h-5 w-5 text-yellow-400 mt-0.5" />
                   <span className="text-indigo-200">Advanced parent statistics</span>
                 </li>
               </ul>
@@ -308,7 +293,7 @@ export function Exsize() {
             "shadow-lg shadow-indigo-500/20"
           )}>
             <div className="flex items-center space-x-3 mb-4">
-              <Shield className="h-6 w-6 text-indigo-400" />
+              <IconShield aria-hidden="true" className="h-6 w-6 text-indigo-400" />
               <h2 className={cn(
                 "text-2xl font-bold",
                 "bg-gradient-to-r from-indigo-400 to-purple-400",
@@ -319,21 +304,21 @@ export function Exsize() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex items-start space-x-3">
-                <Shield className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconShield aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">GDPR Compliant</p>
                   <p className="text-indigo-300 text-sm">Full account deletion with cascading data removal. Special handling for minors under 16.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Users className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconUsers aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">No Public Child Profiles</p>
                   <p className="text-indigo-300 text-sm">Child profiles are visible only to the child and their parents. No inter-family communication.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Zap className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconBolt aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">No Pay-to-Win</p>
                   <p className="text-indigo-300 text-sm">ExBucks cannot be purchased with real money. Cannot be traded between children. No ads.</p>

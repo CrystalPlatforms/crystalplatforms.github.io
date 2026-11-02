@@ -55,7 +55,7 @@ export function FeaturesSection() {
                       glowAnimation,
                       "shadow-[0_0_15px_0_rgba(99,102,241,0.5)]"
                     )}>
-                      <IconComponent className="h-8 w-8 text-white" />
+                      <IconComponent aria-hidden="true" className="h-8 w-8 text-white" />
                     </div>
                     <p className={cn(
                       "text-lg leading-6 font-bold",

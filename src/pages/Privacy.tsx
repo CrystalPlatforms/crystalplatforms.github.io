@@ -1,6 +1,6 @@
 import { cn } from '../utils/helpers'
 import { glowAnimation } from '../utils/game-effects'
-import { Shield } from 'lucide-react'
+import { IconShield } from '@tabler/icons-react'
 import { Link } from 'react-router'
 
 export function Privacy() {
@@ -16,7 +16,7 @@ export function Privacy() {
                 "bg-gradient-to-br from-indigo-600 to-purple-600",
                 "shadow-lg shadow-indigo-500/30"
               )}>
-                <Shield className="h-12 w-12 text-white" />
+                <IconShield aria-hidden="true" className="h-12 w-12 text-white" />
               </div>
             </div>
             <h1 className={cn(

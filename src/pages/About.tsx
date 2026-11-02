@@ -1,6 +1,6 @@
 import { cn } from '../utils/helpers'
 import { glowAnimation } from '../utils/game-effects'
-import { Gem, Gamepad2, Users, Target, Heart, Zap } from 'lucide-react'
+import { IconBolt, IconDeviceGamepad2, IconDiamond, IconHeart, IconTarget, IconUsers } from '@tabler/icons-react'
 
 export function About() {
   return (
@@ -15,7 +15,7 @@ export function About() {
                 "bg-gradient-to-br from-indigo-600 to-purple-600",
                 "shadow-lg shadow-indigo-500/30"
               )}>
-                <Gem className="h-12 w-12 text-white" />
+                <IconDiamond aria-hidden="true" className="h-12 w-12 text-white" />
               </div>
             </div>
             <h1 className={cn(
@@ -42,7 +42,7 @@ export function About() {
             "shadow-lg shadow-indigo-500/20"
           )}>
             <div className="flex items-center space-x-4 mb-6">
-              <Target className="h-8 w-8 text-indigo-400" />
+              <IconTarget aria-hidden="true" className="h-8 w-8 text-indigo-400" />
               <h2 className={cn(
                 "text-3xl font-bold",
                 "bg-gradient-to-r from-indigo-400 to-purple-400",
@@ -90,7 +90,7 @@ export function About() {
                 "text-center"
               )}>
                 <div className="flex justify-center mb-4">
-                  <Heart className="h-10 w-10 text-indigo-400" />
+                  <IconHeart aria-hidden="true" className="h-10 w-10 text-indigo-400" />
                 </div>
                 <h3 className={cn(
                   "text-xl font-bold mb-2",
@@ -110,7 +110,7 @@ export function About() {
                 "text-center"
               )}>
                 <div className="flex justify-center mb-4">
-                  <Zap className="h-10 w-10 text-indigo-400" />
+                  <IconBolt aria-hidden="true" className="h-10 w-10 text-indigo-400" />
                 </div>
                 <h3 className={cn(
                   "text-xl font-bold mb-2",
@@ -130,7 +130,7 @@ export function About() {
                 "text-center"
               )}>
                 <div className="flex justify-center mb-4">
-                  <Users className="h-10 w-10 text-indigo-400" />
+                  <IconUsers aria-hidden="true" className="h-10 w-10 text-indigo-400" />
                 </div>
                 <h3 className={cn(
                   "text-xl font-bold mb-2",
@@ -153,7 +153,7 @@ export function About() {
             "shadow-lg shadow-indigo-500/20"
           )}>
             <div className="flex items-center space-x-4 mb-6">
-              <Gamepad2 className="h-8 w-8 text-indigo-400" />
+              <IconDeviceGamepad2 aria-hidden="true" className="h-8 w-8 text-indigo-400" />
               <h2 className={cn(
                 "text-3xl font-bold",
                 "bg-gradient-to-r from-indigo-400 to-purple-400",
@@ -169,7 +169,7 @@ export function About() {
                   "bg-indigo-600/20",
                   "mt-1"
                 )}>
-                  <Gamepad2 className="h-5 w-5 text-indigo-400" />
+                  <IconDeviceGamepad2 aria-hidden="true" className="h-5 w-5 text-indigo-400" />
                 </div>
                 <div>
                   <h3 className={cn(
@@ -191,7 +191,7 @@ export function About() {
                   "bg-indigo-600/20",
                   "mt-1"
                 )}>
-                  <Zap className="h-5 w-5 text-indigo-400" />
+                  <IconBolt aria-hidden="true" className="h-5 w-5 text-indigo-400" />
                 </div>
                 <div>
                   <h3 className={cn(
@@ -213,7 +213,7 @@ export function About() {
                   "bg-indigo-600/20",
                   "mt-1"
                 )}>
-                  <Users className="h-5 w-5 text-indigo-400" />
+                  <IconUsers aria-hidden="true" className="h-5 w-5 text-indigo-400" />
                 </div>
                 <div>
                   <h3 className={cn(

@@ -1,7 +1,7 @@
 import { useContentData } from '../../hooks/useContentData'
 import { ContentData } from '../../types/content'
 import { getIconComponent } from '../../utils/helpers'
-import { Star } from 'lucide-react'
+import { IconStar } from '@tabler/icons-react'
 import { cn } from '../../utils/helpers'
 import { 
   glowAnimation, 
@@ -47,7 +47,7 @@ export function GoodBuySection() {
         <div className="text-center mb-12">
           <div className="flex justify-center mb-6 space-x-2">
             {[...Array(5)].map((_, i) => (
-              <Star
+              <IconStar aria-hidden="true"
                 key={i}
                 className={cn(
                   "h-8 w-8",

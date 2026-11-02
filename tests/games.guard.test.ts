@@ -41,10 +41,5 @@ describe('Games — osadzanie gier przez iframe (issue #27)', () => {
       const item = content.productsShowcase.items.find((i) => i.title === "School's Out!")
       expect(item?.buttonLink).toBe('/schools-out')
     })
-
-    it('karta showcase „Coin Collector" linkuje do /coin-collector', () => {
-      const item = content.productsShowcase.items.find((i) => i.title === 'Coin Collector')
-      expect(item?.buttonLink).toBe('/coin-collector')
-    })
   })
 })

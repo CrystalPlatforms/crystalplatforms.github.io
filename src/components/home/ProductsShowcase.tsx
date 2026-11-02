@@ -37,7 +37,7 @@ export function ProductsShowcase() {
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center p-6">
-                      <IconComponent className={cn(
+                      <IconComponent aria-hidden="true" className={cn(
                         "h-20 w-20 text-indigo-300",
                         glowAnimation
                       )} />
@@ -62,7 +62,7 @@ export function ProductsShowcase() {
                             "hover:from-indigo-600 hover:to-purple-600"
                           )}
                         >
-                          <IconComponent className="h-4 w-4 mr-2" />
+                          <IconComponent aria-hidden="true" className="h-4 w-4 mr-2" />
                           {product.buttonText}
                         </Link>
                       ) : (
@@ -79,13 +79,13 @@ export function ProductsShowcase() {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <IconComponent className="h-4 w-4 mr-2" />
+                          <IconComponent aria-hidden="true" className="h-4 w-4 mr-2" />
                           {product.buttonText}
                         </a>
                       )
                     ) : (
                       <span className="flex items-center justify-center px-4 py-2 bg-gray-700 text-gray-400 rounded-md cursor-not-allowed">
-                        <IconComponent className="h-4 w-4 mr-2" />
+                        <IconComponent aria-hidden="true" className="h-4 w-4 mr-2" />
                         {product.buttonText}
                       </span>
                     )}

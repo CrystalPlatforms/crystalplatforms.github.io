@@ -16,9 +16,9 @@
     "test:watch": "vitest"
   },
   "dependencies": {
+    "@tabler/icons-react": "^3.50.0",
     "autoprefixer": "^10.4.20",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.453.0",
     "postcss": "^8.4.47",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",

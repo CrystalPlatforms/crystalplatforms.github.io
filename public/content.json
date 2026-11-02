@@ -66,13 +66,6 @@
         "buttonLink": "/schools-out"
       },
       {
-        "icon": "CircleDollarSign",
-        "imageUrl": "/images/coincollector.png",
-        "title": "Coin Collector",
-        "buttonText": "Play Now",
-        "buttonLink": "/coin-collector"
-      },
-      {
         "icon": "Trophy",
         "imageUrl": "/images/sprintandsurvive.png",
         "title": "Sprint'n Survive!",

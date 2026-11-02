@@ -28,7 +28,7 @@ export function StickyBar() {
             "flex items-center justify-center space-x-2 sm:space-x-4 py-2",
             "text-indigo-200"
           )}>
-            <IconComponent className={cn(
+            <IconComponent aria-hidden="true" className={cn(
               "h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0",
               glowAnimation
             )} />

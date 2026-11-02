@@ -1,6 +1,6 @@
 import { cn } from '../utils/helpers'
 import { glowAnimation } from '../utils/game-effects'
-import { Mail, Twitter, Youtube, CheckCircle, AlertCircle, Loader2 } from 'lucide-react'
+import { IconAlertCircle, IconBrandX, IconBrandYoutube, IconCircleCheck, IconLoader2, IconMail } from '@tabler/icons-react'
 import { useState, FormEvent } from 'react'
 
 // Formspree endpoint - zastąp swoim
@@ -19,7 +19,7 @@ function LoadingOverlay() {
         "shadow-xl shadow-indigo-500/20",
         "flex flex-col items-center gap-4"
       )}>
-        <Loader2 className={cn(
+        <IconLoader2 aria-hidden="true" className={cn(
           "h-8 w-8 text-indigo-400",
           "animate-spin"
         )} />
@@ -104,8 +104,8 @@ export function Contact() {
                     "transition-colors duration-200"
                   )}
                 >
-                  <Twitter className="h-6 w-6" />
-                  <span>X</span>
+                  <IconBrandX aria-hidden="true" className="h-6 w-6" />
+                  <span>IconX</span>
                 </a>
                 
                 <a
@@ -118,7 +118,7 @@ export function Contact() {
                     "transition-colors duration-200"
                   )}
                 >
-                  <Youtube className="h-6 w-6" />
+                  <IconBrandYoutube aria-hidden="true" className="h-6 w-6" />
                   <span>YouTube</span>
                 </a>
               </div>
@@ -133,7 +133,7 @@ export function Contact() {
                 "bg-green-900/20 border border-green-500/30",
                 "flex items-center space-x-2"
               )}>
-                <CheckCircle className="h-5 w-5 text-green-400" />
+                <IconCircleCheck aria-hidden="true" className="h-5 w-5 text-green-400" />
                 <span className="text-green-300">Message sent successfully!</span>
               </div>
             )}
@@ -144,7 +144,7 @@ export function Contact() {
                 "bg-red-900/20 border border-red-500/30",
                 "flex items-center space-x-2"
               )}>
-                <AlertCircle className="h-5 w-5 text-red-400" />
+                <IconAlertCircle aria-hidden="true" className="h-5 w-5 text-red-400" />
                 <span className="text-red-300">
                   {!formData.email || !formData.subject || !formData.message
                     ? 'Please fill in all fields'
@@ -155,7 +155,7 @@ export function Contact() {
 
             <div>
               <label htmlFor="email" className="block text-indigo-300 font-medium mb-2 flex items-center space-x-2">
-                <Mail className="h-5 w-5" />
+                <IconMail aria-hidden="true" className="h-5 w-5" />
                 <span>Email</span>
               </label>
               <input
@@ -233,7 +233,7 @@ export function Contact() {
                 "disabled:opacity-50 disabled:cursor-not-allowed"
               )}
             >
-              <Mail className="h-5 w-5" />
+              <IconMail aria-hidden="true" className="h-5 w-5" />
               <span>Send Message</span>
             </button>
           </form>

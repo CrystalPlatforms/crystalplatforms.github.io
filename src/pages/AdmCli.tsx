@@ -1,21 +1,6 @@
 import { cn } from '../utils/helpers'
 import { glowAnimation } from '../utils/game-effects'
-import {
-  Terminal,
-  ExternalLink,
-  Settings,
-  Bot,
-  Plug,
-  FolderGit2,
-  KeyRound,
-  GitBranch,
-  Sparkles,
-  CheckCircle,
-  Zap,
-  Package,
-  Clock,
-  Shield
-} from 'lucide-react'
+import { IconBolt, IconCircleCheck, IconClock, IconExternalLink, IconGitBranch, IconGitFork, IconKey, IconPackage, IconPlug, IconRobot, IconSettings, IconShield, IconSparkles, IconTerminal } from '@tabler/icons-react'
 
 export function AdmCli() {
   return (
@@ -73,7 +58,7 @@ export function AdmCli() {
                 "hover:shadow-xl hover:shadow-indigo-500/30"
               )}
             >
-              View on GitHub <ExternalLink className="h-5 w-5" />
+              View on GitHub <IconExternalLink aria-hidden="true" className="h-5 w-5" />
             </a>
           </div>
 
@@ -99,7 +84,7 @@ export function AdmCli() {
               )}>
                 <div className="flex items-center space-x-3 mb-3">
                   <div className="p-2 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
-                    <Package className="h-5 w-5 text-white" />
+                    <IconPackage aria-hidden="true" className="h-5 w-5 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-indigo-200">npm</h3>
                 </div>
@@ -117,7 +102,7 @@ export function AdmCli() {
               )}>
                 <div className="flex items-center space-x-3 mb-3">
                   <div className="p-2 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
-                    <Package className="h-5 w-5 text-white" />
+                    <IconPackage aria-hidden="true" className="h-5 w-5 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-indigo-200">Homebrew (macOS/Linux)</h3>
                 </div>
@@ -136,7 +121,7 @@ brew install CrystalPlatforms/tap/adm`}
               )}>
                 <div className="flex items-center space-x-3 mb-3">
                   <div className="p-2 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
-                    <Terminal className="h-5 w-5 text-white" />
+                    <IconTerminal aria-hidden="true" className="h-5 w-5 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-indigo-200">macOS / Linux (curl)</h3>
                 </div>
@@ -154,7 +139,7 @@ brew install CrystalPlatforms/tap/adm`}
               )}>
                 <div className="flex items-center space-x-3 mb-3">
                   <div className="p-2 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
-                    <Terminal className="h-5 w-5 text-white" />
+                    <IconTerminal aria-hidden="true" className="h-5 w-5 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-indigo-200">Windows (PowerShell)</h3>
                 </div>
@@ -172,7 +157,7 @@ brew install CrystalPlatforms/tap/adm`}
               "font-mono text-sm"
             )}>
               <div className="flex items-center space-x-2 mb-3">
-                <Terminal className="h-5 w-5 text-indigo-400" />
+                <IconTerminal aria-hidden="true" className="h-5 w-5 text-indigo-400" />
                 <span className="text-indigo-300 font-sans font-medium">Launch the TUI</span>
               </div>
               <p><span className="text-green-400">$</span> <span className="text-indigo-300">adm</span> <span className="text-gray-500"># Start the full-screen terminal UI</span></p>
@@ -197,7 +182,7 @@ brew install CrystalPlatforms/tap/adm`}
               )}>
                 <div className="flex items-center space-x-3 mb-3">
                   <div className="p-2 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
-                    <Settings className="h-6 w-6 text-white" />
+                    <IconSettings aria-hidden="true" className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-indigo-200">One-Command Setup</h3>
                 </div>
@@ -211,7 +196,7 @@ brew install CrystalPlatforms/tap/adm`}
               )}>
                 <div className="flex items-center space-x-3 mb-3">
                   <div className="p-2 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
-                    <Bot className="h-6 w-6 text-white" />
+                    <IconRobot aria-hidden="true" className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-indigo-200">AI Assistant</h3>
                 </div>
@@ -225,7 +210,7 @@ brew install CrystalPlatforms/tap/adm`}
               )}>
                 <div className="flex items-center space-x-3 mb-3">
                   <div className="p-2 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
-                    <GitBranch className="h-6 w-6 text-white" />
+                    <IconGitBranch aria-hidden="true" className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-indigo-200">GitHub & GitLab</h3>
                 </div>
@@ -239,7 +224,7 @@ brew install CrystalPlatforms/tap/adm`}
               )}>
                 <div className="flex items-center space-x-3 mb-3">
                   <div className="p-2 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
-                    <Plug className="h-6 w-6 text-white" />
+                    <IconPlug aria-hidden="true" className="h-6 w-6 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-indigo-200">Plugin System</h3>
                 </div>
@@ -267,7 +252,7 @@ brew install CrystalPlatforms/tap/adm`}
               )}>
                 <div className="flex justify-center mb-3">
                   <div className="p-3 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
-                    <Package className="h-8 w-8 text-white" />
+                    <IconPackage aria-hidden="true" className="h-8 w-8 text-white" />
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-indigo-200 mb-2">1. Install</h3>
@@ -282,7 +267,7 @@ brew install CrystalPlatforms/tap/adm`}
               )}>
                 <div className="flex justify-center mb-3">
                   <div className="p-3 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
-                    <Settings className="h-8 w-8 text-white" />
+                    <IconSettings aria-hidden="true" className="h-8 w-8 text-white" />
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-indigo-200 mb-2">2. Setup</h3>
@@ -297,7 +282,7 @@ brew install CrystalPlatforms/tap/adm`}
               )}>
                 <div className="flex justify-center mb-3">
                   <div className="p-3 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
-                    <Bot className="h-8 w-8 text-white" />
+                    <IconRobot aria-hidden="true" className="h-8 w-8 text-white" />
                   </div>
                 </div>
                 <h3 className="text-xl font-bold text-indigo-200 mb-2">3. Work</h3>
@@ -322,42 +307,42 @@ brew install CrystalPlatforms/tap/adm`}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex items-start space-x-3">
-                <FolderGit2 className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconGitFork aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">Dotfiles Sync</p>
                   <p className="text-indigo-300 text-sm">Auto-restore bashrc, zshrc, gitconfig, and SSH config from your GitHub repo or gist.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <KeyRound className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconKey aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">Secure Credentials</p>
                   <p className="text-indigo-300 text-sm">Tokens stored in OS keychain (macOS) or encrypted file (Linux). Connect GitHub & GitLab via OAuth or PAT.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Zap className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconBolt aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">Smart Commits</p>
                   <p className="text-indigo-300 text-sm">AI-powered commit message suggestions based on staged changes.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Sparkles className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconSparkles aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">Vibe Features</p>
                   <p className="text-indigo-300 text-sm">ASCII clock, dev quotes, theme support, and fuzzy command search for a polished terminal experience.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Package className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconPackage aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">Repo Templates</p>
                   <p className="text-indigo-300 text-sm">Pre-made templates for React, Node, and full-stack projects. Clone and start coding instantly.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <Shield className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconShield aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">Clean Uninstall</p>
                   <p className="text-indigo-300 text-sm"><code className="bg-gray-800 px-2 py-0.5 rounded text-indigo-200">adm uninstall</code> removes everything cleanly — no leftover files.</p>
@@ -374,7 +359,7 @@ brew install CrystalPlatforms/tap/adm`}
             "font-mono text-sm"
           )}>
             <div className="flex items-center space-x-2 mb-4">
-              <Terminal className="h-5 w-5 text-indigo-400" />
+              <IconTerminal aria-hidden="true" className="h-5 w-5 text-indigo-400" />
               <span className="text-indigo-300 font-sans font-medium">Commands Preview</span>
             </div>
             <div className="space-y-2">
@@ -388,7 +373,7 @@ brew install CrystalPlatforms/tap/adm`}
             </div>
           </div>
 
-          {/* Target */}
+          {/* IconTarget */}
           <div className={cn(
             "bg-gradient-to-b from-indigo-900/50 to-purple-900/50",
             "rounded-xl p-6",
@@ -396,7 +381,7 @@ brew install CrystalPlatforms/tap/adm`}
             "shadow-lg shadow-indigo-500/20"
           )}>
             <div className="flex items-center space-x-3 mb-4">
-              <Clock className="h-6 w-6 text-indigo-400" />
+              <IconClock aria-hidden="true" className="h-6 w-6 text-indigo-400" />
               <h2 className={cn(
                 "text-2xl font-bold",
                 "bg-gradient-to-r from-indigo-400 to-purple-400",
@@ -407,21 +392,21 @@ brew install CrystalPlatforms/tap/adm`}
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="flex items-start space-x-3">
-                <CheckCircle className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconCircleCheck aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">New Team Members</p>
                   <p className="text-indigo-300 text-sm">Set up dev machine in under 5 minutes.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <CheckCircle className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconCircleCheck aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">Experienced Devs</p>
                   <p className="text-indigo-300 text-sm">Automate daily GitHub/GitLab tasks with AI.</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3">
-                <CheckCircle className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <IconCircleCheck aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
                   <p className="text-indigo-200 font-medium">Team Leads</p>
                   <p className="text-indigo-300 text-sm">Standardize toolchain across the team.</p>

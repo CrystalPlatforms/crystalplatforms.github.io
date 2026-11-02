@@ -1,5 +1,5 @@
 import { Link } from 'react-router'
-import { Gamepad2 } from 'lucide-react'
+import { IconDeviceGamepad2 } from '@tabler/icons-react'
 import { useContentData } from '../hooks/useContentData'
 import { getGameBySlug } from '../utils/games'
 import { GamePlayer } from '../components/games/GamePlayer'
@@ -23,7 +23,7 @@ export function PlayGame({ slug }: { slug: string }) {
   if (!game) {
     return (
       <div className="flex-grow flex flex-col items-center justify-center text-center px-4 py-24">
-        <Gamepad2 className="h-16 w-16 text-indigo-400/40 mb-4" />
+        <IconDeviceGamepad2 aria-hidden="true" className="h-16 w-16 text-indigo-400/40 mb-4" />
         <h1 className="text-2xl font-bold text-indigo-200 mb-2">Nie znaleziono gry</h1>
         <p className="text-indigo-300/70 mb-6">
           Gra o slugu <code className="text-indigo-200">{slug}</code> nie istnieje lub została przeniesiona.

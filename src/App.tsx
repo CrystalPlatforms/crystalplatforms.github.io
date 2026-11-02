@@ -13,6 +13,7 @@ import { Exsize } from './pages/Exsize'
 import { Wspolniak } from './pages/Wspolniak'
 import { AdmCli } from './pages/AdmCli'
 import { Umux } from './pages/Umux'
+import { Klepai } from './pages/Klepai'
 import { About } from './pages/About'
 import { Privacy } from './pages/Privacy'
 import { Terms } from './pages/Terms'
@@ -66,6 +67,7 @@ function Shell() {
         <Route path="/products/wspolniak" element={<Wspolniak />} />
         <Route path="/products/adm-cli" element={<AdmCli />} />
         <Route path="/products/umux" element={<Umux />} />
+        <Route path="/products/klepai" element={<Klepai />} />
         <Route path="/about" element={<About />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />

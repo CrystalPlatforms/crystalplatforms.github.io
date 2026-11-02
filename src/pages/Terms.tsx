@@ -1,6 +1,6 @@
 import { cn } from '../utils/helpers'
 import { glowAnimation } from '../utils/game-effects'
-import { FileText } from 'lucide-react'
+import { IconFileText } from '@tabler/icons-react'
 import { Link } from 'react-router'
 
 export function Terms() {
@@ -16,7 +16,7 @@ export function Terms() {
                 "bg-gradient-to-br from-indigo-600 to-purple-600",
                 "shadow-lg shadow-indigo-500/30"
               )}>
-                <FileText className="h-12 w-12 text-white" />
+                <IconFileText aria-hidden="true" className="h-12 w-12 text-white" />
               </div>
             </div>
             <h1 className={cn(

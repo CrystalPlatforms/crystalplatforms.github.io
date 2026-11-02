@@ -1,6 +1,6 @@
 import { cn } from '../utils/helpers'
 import { glowAnimation } from '../utils/game-effects'
-import { BookOpen, Gamepad2, Keyboard, Zap, Trophy, ArrowLeft, Space } from 'lucide-react'
+import { IconArrowLeft, IconBolt, IconBook, IconDeviceGamepad2, IconKeyboard, IconSpace, IconTrophy } from '@tabler/icons-react'
 
 export function GameGuide() {
   return (
@@ -15,7 +15,7 @@ export function GameGuide() {
                 "bg-gradient-to-br from-indigo-600 to-purple-600",
                 "shadow-lg shadow-indigo-500/30"
               )}>
-                <BookOpen className="h-12 w-12 text-white" />
+                <IconBook aria-hidden="true" className="h-12 w-12 text-white" />
               </div>
             </div>
             <h1 className={cn(
@@ -42,7 +42,7 @@ export function GameGuide() {
             "shadow-lg shadow-indigo-500/20"
           )}>
             <div className="flex items-center space-x-4 mb-6">
-              <Gamepad2 className="h-10 w-10 text-indigo-400" />
+              <IconDeviceGamepad2 aria-hidden="true" className="h-10 w-10 text-indigo-400" />
               <h2 className={cn(
                 "text-3xl font-bold",
                 "bg-gradient-to-r from-indigo-400 to-purple-400",
@@ -70,7 +70,7 @@ export function GameGuide() {
                   "text-xl font-bold mb-4 text-indigo-200",
                   "flex items-center space-x-2"
                 )}>
-                  <Keyboard className="h-5 w-5" />
+                  <IconKeyboard aria-hidden="true" className="h-5 w-5" />
                   <span>Basic Controls</span>
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -80,7 +80,7 @@ export function GameGuide() {
                     "border border-indigo-500/20"
                   )}>
                     <div className="flex items-center space-x-3 mb-2">
-                      <Space className="h-5 w-5 text-indigo-400" />
+                      <IconSpace aria-hidden="true" className="h-5 w-5 text-indigo-400" />
                       <span className="text-indigo-200 font-medium">Jump</span>
                     </div>
                     <p className="text-indigo-300 text-sm">
@@ -94,7 +94,7 @@ export function GameGuide() {
                     "border border-indigo-500/20"
                   )}>
                     <div className="flex items-center space-x-3 mb-2">
-                      <Zap className="h-5 w-5 text-indigo-400" />
+                      <IconBolt aria-hidden="true" className="h-5 w-5 text-indigo-400" />
                       <span className="text-indigo-200 font-medium">Energy Management</span>
                     </div>
                     <p className="text-indigo-300 text-sm">
@@ -109,8 +109,8 @@ export function GameGuide() {
                   "text-xl font-bold mb-4 text-indigo-200",
                   "flex items-center space-x-2"
                 )}>
-                  <Zap className="h-5 w-5" />
-                  <span>Morse Code Combos</span>
+                  <IconBolt aria-hidden="true" className="h-5 w-5" />
+                  <span>Morse IconCode Combos</span>
                 </h3>
                 <div className={cn(
                   "p-4 rounded-lg",
@@ -134,7 +134,7 @@ export function GameGuide() {
                   "text-xl font-bold mb-4 text-indigo-200",
                   "flex items-center space-x-2"
                 )}>
-                  <Trophy className="h-5 w-5" />
+                  <IconTrophy aria-hidden="true" className="h-5 w-5" />
                   <span>Tips for High Scores</span>
                 </h3>
                 <div className="space-y-3">
@@ -178,7 +178,7 @@ export function GameGuide() {
             "shadow-lg shadow-indigo-500/20"
           )}>
             <div className="flex items-center space-x-4 mb-6">
-              <Gamepad2 className="h-10 w-10 text-indigo-400" />
+              <IconDeviceGamepad2 aria-hidden="true" className="h-10 w-10 text-indigo-400" />
               <h2 className={cn(
                 "text-3xl font-bold",
                 "bg-gradient-to-r from-indigo-400 to-purple-400",
@@ -206,7 +206,7 @@ export function GameGuide() {
                   "text-xl font-bold mb-4 text-indigo-200",
                   "flex items-center space-x-2"
                 )}>
-                  <Keyboard className="h-5 w-5" />
+                  <IconKeyboard aria-hidden="true" className="h-5 w-5" />
                   <span>Controls</span>
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -216,7 +216,7 @@ export function GameGuide() {
                     "border border-indigo-500/20"
                   )}>
                     <div className="flex items-center space-x-3 mb-2">
-                      <ArrowLeft className="h-5 w-5 text-indigo-400" />
+                      <IconArrowLeft aria-hidden="true" className="h-5 w-5 text-indigo-400" />
                       <span className="text-indigo-200 font-medium">Movement</span>
                     </div>
                     <p className="text-indigo-300 text-sm">
@@ -230,7 +230,7 @@ export function GameGuide() {
                     "border border-indigo-500/20"
                   )}>
                     <div className="flex items-center space-x-3 mb-2">
-                      <Trophy className="h-5 w-5 text-indigo-400" />
+                      <IconTrophy aria-hidden="true" className="h-5 w-5 text-indigo-400" />
                       <span className="text-indigo-200 font-medium">Objective</span>
                     </div>
                     <p className="text-indigo-300 text-sm">
@@ -245,7 +245,7 @@ export function GameGuide() {
                   "text-xl font-bold mb-4 text-indigo-200",
                   "flex items-center space-x-2"
                 )}>
-                  <Zap className="h-5 w-5" />
+                  <IconBolt aria-hidden="true" className="h-5 w-5" />
                   <span>Gameplay Mechanics</span>
                 </h3>
                 <div className="space-y-4">
@@ -290,7 +290,7 @@ export function GameGuide() {
                   "text-xl font-bold mb-4 text-indigo-200",
                   "flex items-center space-x-2"
                 )}>
-                  <Trophy className="h-5 w-5" />
+                  <IconTrophy aria-hidden="true" className="h-5 w-5" />
                   <span>Pro Tips</span>
                 </h3>
                 <div className="space-y-3">
