@@ -233,11 +233,11 @@
           },
           {
             "question": "How do I start playing School's Out!?",
-            "answer": "Simply visit the School's Out! page and click 'Play Now'. Use spacebar to jump, manage your energy, and try Morse code combos with the Enter key for bonuses!"
+            "answer": "Simply visit the School's Out! page and click 'Play Now'. Use spacebar to jump, manage your energy, and tap out Morse code combos with the Enter key for bonus energy!"
           },
           {
             "question": "How do I play Coin Collector?",
-            "answer": "Use arrow keys to move your character, collect all coins on each level, avoid obstacles, and reach the exit to complete the level. Check our Game Guide for detailed instructions!"
+            "answer": "Use the left and right arrow keys to switch between three lanes, catch falling coins as a bonus and dodge obstacles — you earn 10 points per second survived, and the game speeds up every 100 points. One hit ends the run. Check our Game Guide for detailed instructions!"
           },
           {
             "question": "Do your games save progress?",
@@ -257,7 +257,7 @@
           },
           {
             "question": "Can I play on mobile devices?",
-            "answer": "Absolutely! Our web-based games are fully responsive and optimized for mobile browsers. You can play on smartphones and tablets with touch controls."
+            "answer": "School's Out! has full touch controls on mobile — tap the left half of the screen to jump and the right half for Morse code input. Coin Collector and Sprint'n Survive! are keyboard-only, so they're best played on desktop."
           },
           {
             "question": "What if I encounter a bug or technical issue?",
@@ -366,6 +366,14 @@
           {
             "text": "Wspolniak",
             "url": "/products/wspolniak"
+          },
+          {
+            "text": "umux",
+            "url": "/products/umux"
+          },
+          {
+            "text": "klepai",
+            "url": "/products/klepai"
           },
           {
             "text": "ADM-CLI",

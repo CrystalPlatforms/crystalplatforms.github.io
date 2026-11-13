@@ -1,6 +1,7 @@
 import { cn } from '../utils/helpers'
 import { glowAnimation } from '../utils/game-effects'
 import {
+  IconBooks,
   IconBrandApple,
   IconBrandGithub,
   IconBrandWindows,
@@ -12,6 +13,7 @@ import {
   IconMessageChatbot,
   IconRobot,
   IconShield,
+  IconShieldLock,
   IconSparkles,
 } from '@tabler/icons-react'
 
@@ -63,7 +65,7 @@ export function Klepai() {
               Download klepai
             </h2>
             <p className="text-indigo-300 mb-6 max-w-2xl mx-auto">
-              Alpha v0.0.1 is out — free and open-source, no accounts, no telemetry. Grab the build for your system from GitHub Releases.
+              Alpha v0.0.2 is out — free and open-source, no accounts, no telemetry. Grab the build for your system from GitHub Releases.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-3 mb-6">
               <a
@@ -217,6 +219,34 @@ export function Klepai() {
                   <h3 className="text-xl font-bold text-indigo-200">Agent Mode</h3>
                 </div>
                 <p className="text-indigo-300 text-sm">Let your server models code in a project folder through built-in tools — with Claude Code and Codex CLI available as ready-made extra brains in the same window.</p>
+              </div>
+              <div className={cn(
+                "bg-gradient-to-b from-indigo-900/50 to-purple-900/50",
+                "rounded-xl p-6",
+                "border border-indigo-500/30",
+                "shadow-lg shadow-indigo-500/20"
+              )}>
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="p-2 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
+                    <IconBooks aria-hidden="true" className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-indigo-200">Skill Library</h3>
+                </div>
+                <p className="text-indigo-300 text-sm">Import .skill packages or plain Markdown files and invoke them from the / palette in any mode — reusable prompts that live locally with your chats.</p>
+              </div>
+              <div className={cn(
+                "bg-gradient-to-b from-indigo-900/50 to-purple-900/50",
+                "rounded-xl p-6",
+                "border border-indigo-500/30",
+                "shadow-lg shadow-indigo-500/20"
+              )}>
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="p-2 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
+                    <IconShieldLock aria-hidden="true" className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-indigo-200">Permission Gates</h3>
+                </div>
+                <p className="text-indigo-300 text-sm">Agents ask before they act — approve an action once, for the conversation, or forever. No surprise file edits.</p>
               </div>
               <div className={cn(
                 "bg-gradient-to-b from-indigo-900/50 to-purple-900/50",

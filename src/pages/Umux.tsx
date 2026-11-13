@@ -1,6 +1,6 @@
 import { cn } from '../utils/helpers'
 import { glowAnimation } from '../utils/game-effects'
-import { IconActivity, IconAppWindow, IconBell, IconBoxMultiple, IconBrandApple, IconCircleCheck, IconCode, IconCpu, IconDownload, IconExternalLink, IconHistory, IconLayoutColumns, IconLayoutGrid, IconPlug, IconRocket, IconSparkles, IconTerminal2 } from '@tabler/icons-react'
+import { IconActivity, IconAppWindow, IconBell, IconBoxMultiple, IconBrandApple, IconCircleCheck, IconCode, IconCpu, IconDownload, IconExternalLink, IconHistory, IconLayoutColumns, IconLayoutGrid, IconPlug, IconRocket, IconServer, IconSparkles, IconTerminal2 } from '@tabler/icons-react'
 
 export function Umux() {
   return (
@@ -47,10 +47,10 @@ export function Umux() {
               "bg-gradient-to-r from-indigo-400 to-purple-400",
               "bg-clip-text text-transparent"
             )}>
-              IconDownload umux
+              Download umux
             </h2>
             <p className="text-indigo-300 mb-6 max-w-2xl mx-auto">
-              v1.0 is out — free and open-source, no sign-up. Grab the latest release for your system from GitHub Releases.
+              v1.8 is out — free and open-source, no sign-up. Grab the latest release for your system from GitHub Releases.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-3 mb-6">
               <a
@@ -195,7 +195,7 @@ export function Umux() {
                   </div>
                   <h3 className="text-xl font-bold text-indigo-200">AI CLI Notifications</h3>
                 </div>
-                <p className="text-indigo-300 text-sm">When AI tools like Claude IconCode, Codex, Gemini CLI or Aider signal task completion, umux fires a native desktop notification — step away without babysitting long tasks.</p>
+                <p className="text-indigo-300 text-sm">When AI tools like Claude Code, Codex, Gemini CLI or Aider signal task completion, umux fires a native desktop notification — step away without babysitting long tasks.</p>
               </div>
               <div className={cn(
                 "bg-gradient-to-b from-indigo-900/50 to-purple-900/50",
@@ -238,6 +238,34 @@ export function Umux() {
                   <h3 className="text-xl font-bold text-indigo-200">Session Restore</h3>
                 </div>
                 <p className="text-indigo-300 text-sm">Close the app, come back tomorrow — umux reopens your workspaces, panels, layout, working directories and shells exactly where you left off.</p>
+              </div>
+              <div className={cn(
+                "bg-gradient-to-b from-indigo-900/50 to-purple-900/50",
+                "rounded-xl p-6",
+                "border border-indigo-500/30",
+                "shadow-lg shadow-indigo-500/20"
+              )}>
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="p-2 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
+                    <IconServer aria-hidden="true" className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-indigo-200">Storestation</h3>
+                </div>
+                <p className="text-indigo-300 text-sm">The optional daemon keeps sessions alive after the window closes — umux attach drops you straight back into your running terminals. umux Core can even keep the machine awake while agents work.</p>
+              </div>
+              <div className={cn(
+                "bg-gradient-to-b from-indigo-900/50 to-purple-900/50",
+                "rounded-xl p-6",
+                "border border-indigo-500/30",
+                "shadow-lg shadow-indigo-500/20"
+              )}>
+                <div className="flex items-center space-x-3 mb-3">
+                  <div className="p-2 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
+                    <IconTerminal2 aria-hidden="true" className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-indigo-200">Live CLI</h3>
+                </div>
+                <p className="text-indigo-300 text-sm">Drive the running app from your terminal over a local socket — send keys to tabs, check updates, and give AI agents a machine-readable map of every command with umux agent-context.</p>
               </div>
             </div>
           </div>
@@ -309,7 +337,7 @@ export function Umux() {
               <div className="flex items-start space-x-3">
                 <IconCircleCheck aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
                 <div>
-                  <p className="text-indigo-200 font-medium">Power IconUsers</p>
+                  <p className="text-indigo-200 font-medium">Power Users</p>
                   <p className="text-indigo-300 text-sm">Tame dozens of scattered terminal windows.</p>
                 </div>
               </div>

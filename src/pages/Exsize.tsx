@@ -1,6 +1,6 @@
 import { cn } from '../utils/helpers'
 import { glowAnimation } from '../utils/game-effects'
-import { IconBolt, IconCalendar, IconChartHistogram, IconCircleCheck, IconClipboardList, IconCrown, IconExternalLink, IconGift, IconShield, IconSparkles, IconStar, IconTarget, IconTrophy, IconUsers } from '@tabler/icons-react'
+import { IconBolt, IconBrandGoogle, IconCalendar, IconChartHistogram, IconCircleCheck, IconClipboardList, IconCrown, IconExternalLink, IconGift, IconShield, IconSparkles, IconStar, IconTarget, IconTrophy, IconUsers, IconWifiOff } from '@tabler/icons-react'
 
 export function Exsize() {
   return (
@@ -30,7 +30,7 @@ export function Exsize() {
               "text-indigo-300 text-lg",
               "max-w-2xl mx-auto"
             )}>
-              Family task management with gamification — motivate your children through tasks, rewards, and virtual currency.
+              Family task management with gamification — assign chores, earn ExBucks, climb the leaderboards and customize your avatar. Works offline as an installable PWA.
             </p>
           </div>
 
@@ -198,6 +198,34 @@ export function Exsize() {
                 <div>
                   <p className="text-indigo-200 font-medium">Player Profiles</p>
                   <p className="text-indigo-300 text-sm">Game-like profile pages with level, XP, streaks, badges, and transaction history.</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <IconTrophy aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <div>
+                  <p className="text-indigo-200 font-medium">Leaderboards</p>
+                  <p className="text-indigo-300 text-sm">Climb the global ranking from day one — SizePass adds the family leaderboard to compete with siblings.</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <IconSparkles aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <div>
+                  <p className="text-indigo-200 font-medium">Avatar Shop</p>
+                  <p className="text-indigo-300 text-sm">Spend earned ExBucks on cosmetic avatar items and give your profile a personal touch.</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <IconWifiOff aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <div>
+                  <p className="text-indigo-200 font-medium">Installable PWA</p>
+                  <p className="text-indigo-300 text-sm">Install on any device, use it offline, and get push reminders about due tasks.</p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-3">
+                <IconBrandGoogle aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
+                <div>
+                  <p className="text-indigo-200 font-medium">Google Login &amp; AI-Ready</p>
+                  <p className="text-indigo-300 text-sm">Sign in with Google (role picker included), and the built-in MCP server lets AI assistants manage the family to-do list.</p>
                 </div>
               </div>
             </div>

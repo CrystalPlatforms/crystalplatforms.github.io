@@ -1,6 +1,6 @@
 import { cn } from '../utils/helpers'
 import { glowAnimation } from '../utils/game-effects'
-import { IconArrowLeft, IconCalendar, IconCamera, IconFolderOpen, IconHeart, IconLayoutDashboard, IconMessageCircle, IconPhoto, IconSearch, IconShield, IconUsers } from '@tabler/icons-react'
+import { IconArrowLeft, IconCalendar, IconCamera, IconHeart, IconKey, IconLayoutDashboard, IconMessageCircle, IconMessages, IconPhoto, IconRobot, IconSearch, IconShield, IconUsers } from '@tabler/icons-react'
 import { Link } from 'react-router'
 
 export function Wspolniak() {
@@ -31,7 +31,7 @@ export function Wspolniak() {
               "text-indigo-300 text-lg",
               "max-w-2xl mx-auto"
             )}>
-              A private digital family home — share memories, photos, and organize events in one closed space.
+              A private digital family home — share memories, chat in real time, and plan family events in one closed, invite-only space.
             </p>
           </div>
 
@@ -48,7 +48,7 @@ export function Wspolniak() {
               "bg-gradient-to-r from-indigo-400 to-purple-400",
               "bg-clip-text text-transparent"
             )}>
-              Your Family's Private IconSpace
+              Your Family's Private Space
             </h2>
             <p className="text-indigo-300 mb-4 max-w-2xl mx-auto">
               Wspólniak replaces sending photos individually across messengers by providing one shared digital family space. No public access, no external users, no algorithms.
@@ -58,6 +58,8 @@ export function Wspolniak() {
               <span className="px-4 py-2 rounded-full bg-indigo-900/50 border border-indigo-500/30 text-indigo-200 text-sm">One private space</span>
               <span className="px-4 py-2 rounded-full bg-indigo-900/50 border border-indigo-500/30 text-indigo-200 text-sm">No public access</span>
               <span className="px-4 py-2 rounded-full bg-indigo-900/50 border border-indigo-500/30 text-indigo-200 text-sm">No external users</span>
+              <span className="px-4 py-2 rounded-full bg-indigo-900/50 border border-indigo-500/30 text-indigo-200 text-sm">Passwordless</span>
+              <span className="px-4 py-2 rounded-full bg-indigo-900/50 border border-indigo-500/30 text-indigo-200 text-sm">Real-time chat</span>
             </div>
           </div>
 
@@ -81,7 +83,7 @@ export function Wspolniak() {
                   <IconLayoutDashboard aria-hidden="true" className="h-6 w-6 text-indigo-400" />
                   <h3 className="text-xl font-bold text-indigo-200">Feed</h3>
                 </div>
-                <p className="text-indigo-300 text-sm">Chronological feed with text and photo posts. React, comment, and filter by groups. The main screen of the app.</p>
+                <p className="text-indigo-300 text-sm">Chronological feed with text and photo posts — react, comment, pin the important ones. iPhone HEIC photos convert automatically. The main screen of the app.</p>
               </div>
               <div className={cn(
                 "bg-gradient-to-b from-indigo-900/50 to-purple-900/50",
@@ -93,7 +95,7 @@ export function Wspolniak() {
                   <IconPhoto aria-hidden="true" className="h-6 w-6 text-indigo-400" />
                   <h3 className="text-xl font-bold text-indigo-200">Albums</h3>
                 </div>
-                <p className="text-indigo-300 text-sm">Long-term memory storage. Albums never expire. Everyone can create them, add images with titles, and browse memories.</p>
+                <p className="text-indigo-300 text-sm">Long-term memory storage. Albums never expire. Everyone can create them, add images with titles, and download whole albums as a ZIP.</p>
               </div>
               <div className={cn(
                 "bg-gradient-to-b from-indigo-900/50 to-purple-900/50",
@@ -103,9 +105,9 @@ export function Wspolniak() {
               )}>
                 <div className="flex items-center space-x-3 mb-3">
                   <IconCalendar aria-hidden="true" className="h-6 w-6 text-indigo-400" />
-                  <h3 className="text-xl font-bold text-indigo-200">IconCalendar</h3>
+                  <h3 className="text-xl font-bold text-indigo-200">Family Calendar</h3>
                 </div>
-                <p className="text-indigo-300 text-sm">Plan family events — meetings, birthdays, trips. Events include title, description, date, and optional group assignment.</p>
+                <p className="text-indigo-300 text-sm">Plan family events — meetings, birthdays, trips. A daily reminder worker posts upcoming events straight to the feed (Polish holidays optional).</p>
               </div>
               <div className={cn(
                 "bg-gradient-to-b from-indigo-900/50 to-purple-900/50",
@@ -114,10 +116,10 @@ export function Wspolniak() {
                 "shadow-lg shadow-indigo-500/20"
               )}>
                 <div className="flex items-center space-x-3 mb-3">
-                  <IconFolderOpen aria-hidden="true" className="h-6 w-6 text-indigo-400" />
-                  <h3 className="text-xl font-bold text-indigo-200">Groups</h3>
+                  <IconMessages aria-hidden="true" className="h-6 w-6 text-indigo-400" />
+                  <h3 className="text-xl font-bold text-indigo-200">Real-Time Chat</h3>
                 </div>
-                <p className="text-indigo-300 text-sm">Subspaces inside your family. Create groups for specific topics or events. Posts can belong to a group or the entire family.</p>
+                <p className="text-indigo-300 text-sm">One live family chat built on Cloudflare Durable Objects — messages arrive instantly, with attachments and emoji reactions on every bubble.</p>
               </div>
               <div className={cn(
                 "bg-gradient-to-b from-indigo-900/50 to-purple-900/50",
@@ -129,7 +131,7 @@ export function Wspolniak() {
                   <IconMessageCircle aria-hidden="true" className="h-6 w-6 text-indigo-400" />
                   <h3 className="text-xl font-bold text-indigo-200">Comments & Reactions</h3>
                 </div>
-                <p className="text-indigo-300 text-sm">React to posts with predefined reactions. Leave comments under any post. Visible to all group members.</p>
+                <p className="text-indigo-300 text-sm">React to posts and chat messages with emoji. Leave comments under any post — everything visible to the whole family.</p>
               </div>
               <div className={cn(
                 "bg-gradient-to-b from-indigo-900/50 to-purple-900/50",
@@ -139,9 +141,33 @@ export function Wspolniak() {
               )}>
                 <div className="flex items-center space-x-3 mb-3">
                   <IconSearch aria-hidden="true" className="h-6 w-6 text-indigo-400" />
-                  <h3 className="text-xl font-bold text-indigo-200">IconSearch</h3>
+                  <h3 className="text-xl font-bold text-indigo-200">Search</h3>
                 </div>
-                <p className="text-indigo-300 text-sm">IconSearch across posts, albums, and events to quickly find any memory or information.</p>
+                <p className="text-indigo-300 text-sm">Search across posts, albums, and events to quickly find any memory or information.</p>
+              </div>
+              <div className={cn(
+                "bg-gradient-to-b from-indigo-900/50 to-purple-900/50",
+                "rounded-xl p-6",
+                "border border-indigo-500/30",
+                "shadow-lg shadow-indigo-500/20"
+              )}>
+                <div className="flex items-center space-x-3 mb-3">
+                  <IconRobot aria-hidden="true" className="h-6 w-6 text-indigo-400" />
+                  <h3 className="text-xl font-bold text-indigo-200">AL — AI Assistant</h3>
+                </div>
+                <p className="text-indigo-300 text-sm">Meet AL, the built-in assistant: pick a model, get streaming answers, search the family feed and export conversations — without leaving the app.</p>
+              </div>
+              <div className={cn(
+                "bg-gradient-to-b from-indigo-900/50 to-purple-900/50",
+                "rounded-xl p-6",
+                "border border-indigo-500/30",
+                "shadow-lg shadow-indigo-500/20"
+              )}>
+                <div className="flex items-center space-x-3 mb-3">
+                  <IconKey aria-hidden="true" className="h-6 w-6 text-indigo-400" />
+                  <h3 className="text-xl font-bold text-indigo-200">Passwordless &amp; PWA</h3>
+                </div>
+                <p className="text-indigo-300 text-sm">No passwords — family joins with magic-link invites. Install as a PWA with push notifications, or use the native Android shell.</p>
               </div>
             </div>
           </div>
@@ -164,11 +190,11 @@ export function Wspolniak() {
               <div className="text-center">
                 <div className="flex justify-center mb-3">
                   <div className="p-3 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600">
-                    <IconShield aria-hidden="true" className="h-6 w-6 text-white" />
+                    <IconKey aria-hidden="true" className="h-6 w-6 text-white" />
                   </div>
                 </div>
-                <h3 className="text-indigo-200 font-medium mb-1">Admin Creates Accounts</h3>
-                <p className="text-indigo-300 text-sm">No public registration. Admin creates accounts for family members and manages the space.</p>
+                <h3 className="text-indigo-200 font-medium mb-1">Magic-Link Invites</h3>
+                <p className="text-indigo-300 text-sm">No passwords, no public sign-up. The admin invites family members with magic links and manages the space.</p>
               </div>
               <div className="text-center">
                 <div className="flex justify-center mb-3">
@@ -224,7 +250,7 @@ export function Wspolniak() {
                 </li>
                 <li className="flex items-start space-x-3">
                   <IconShield aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
-                  <span className="text-indigo-200">Posts auto-expire after 6 months</span>
+                  <span className="text-indigo-200">Self-hosted — your data stays on your own Cloudflare account</span>
                 </li>
                 <li className="flex items-start space-x-3">
                   <IconShield aria-hidden="true" className="h-5 w-5 text-indigo-400 mt-0.5" />
